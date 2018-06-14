@@ -1,0 +1,67 @@
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #888888"># ZHAO, MAGGIE </span>
+<span style="color: #888888"># INTRO2, PD 4 </span>
+<span style="color: #888888"># HW 03</span>
+<span style="color: #888888"># 2017-05-01</span>
+
+<span style="color: #888888">##Functions</span>
+<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">numToWordsLarge</span>(n):
+    singleslist <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;zero&quot;</span>, <span style="background-color: #fff0f0">&quot;one&quot;</span>, <span style="background-color: #fff0f0">&quot;two&quot;</span>, <span style="background-color: #fff0f0">&quot;three&quot;</span>, <span style="background-color: #fff0f0">&quot;four&quot;</span>, <span style="background-color: #fff0f0">&quot;five&quot;</span>, <span style="background-color: #fff0f0">&quot;six&quot;</span>, <span style="background-color: #fff0f0">&quot;seven&quot;</span>, <span style="background-color: #fff0f0">&quot;eight&quot;</span>, <span style="background-color: #fff0f0">&quot;nine&quot;</span>, <span style="background-color: #fff0f0">&quot;ten&quot;</span>, <span style="background-color: #fff0f0">&quot;eleven&quot;</span>, <span style="background-color: #fff0f0">&quot;twelve&quot;</span>, <span style="background-color: #fff0f0">&quot;thirteen&quot;</span>, <span style="background-color: #fff0f0">&quot;fourteen&quot;</span>, <span style="background-color: #fff0f0">&quot;fifteen&quot;</span>, <span style="background-color: #fff0f0">&quot;sixteen&quot;</span>, <span style="background-color: #fff0f0">&quot;seventeen&quot;</span>, <span style="background-color: #fff0f0">&quot;eighteen&quot;</span>, <span style="background-color: #fff0f0">&quot;nineteen&quot;</span>]
+    tenslist <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;twenty&quot;</span>, <span style="background-color: #fff0f0">&quot;thirty&quot;</span>, <span style="background-color: #fff0f0">&quot;forty&quot;</span>, <span style="background-color: #fff0f0">&quot;fifty&quot;</span>, <span style="background-color: #fff0f0">&quot;sixty&quot;</span>, <span style="background-color: #fff0f0">&quot;seventy&quot;</span>, <span style="background-color: #fff0f0">&quot;eighty&quot;</span>, <span style="background-color: #fff0f0">&quot;ninety&quot;</span>]
+    <span style="color: #008800; font-weight: bold">if</span> n <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">100</span>:
+        <span style="color: #008800; font-weight: bold">if</span> n <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">20</span>:
+            <span style="color: #008800; font-weight: bold">return</span> singleslist[n]
+        <span style="color: #008800; font-weight: bold">elif</span> n <span style="color: #333333">%</span> <span style="color: #0000DD; font-weight: bold">10</span> <span style="color: #333333">!=</span> <span style="color: #0000DD; font-weight: bold">0</span>:
+            <span style="color: #008800; font-weight: bold">return</span> tenslist[n<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">10</span><span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">2</span>] <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;-&quot;</span> <span style="color: #333333">+</span> numToWordsLarge(n<span style="color: #333333">%</span><span style="color: #0000DD; font-weight: bold">10</span>)
+        <span style="color: #008800; font-weight: bold">elif</span> n<span style="color: #333333">%</span><span style="color: #0000DD; font-weight: bold">10</span> <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">0</span>:
+            <span style="color: #008800; font-weight: bold">return</span> tenslist[n<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">10</span><span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">2</span>]
+    <span style="color: #008800; font-weight: bold">elif</span> n <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">1000</span>:
+        <span style="color: #008800; font-weight: bold">if</span> n <span style="color: #333333">%</span><span style="color: #0000DD; font-weight: bold">100</span> <span style="color: #333333">!=</span> <span style="color: #0000DD; font-weight: bold">0</span>:
+            <span style="color: #008800; font-weight: bold">return</span> numToWordsLarge(n<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">100</span>) <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; hundred and &quot;</span> <span style="color: #333333">+</span> numToWordsLarge(n<span style="color: #333333">%</span><span style="color: #0000DD; font-weight: bold">100</span>)
+        <span style="color: #008800; font-weight: bold">else</span>:
+            <span style="color: #008800; font-weight: bold">return</span> numToWordsLarge(n<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">100</span>) <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; hundred&quot;</span>
+    <span style="color: #008800; font-weight: bold">elif</span> n <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">1000000</span>:
+        <span style="color: #008800; font-weight: bold">if</span> n <span style="color: #333333">%</span> <span style="color: #0000DD; font-weight: bold">1000</span> <span style="color: #333333">!=</span> <span style="color: #0000DD; font-weight: bold">0</span>:
+            <span style="color: #008800; font-weight: bold">return</span> numToWordsLarge(n<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">1000</span>) <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; thousand &quot;</span> <span style="color: #333333">+</span> numToWordsLarge(n<span style="color: #333333">%</span><span style="color: #0000DD; font-weight: bold">1000</span>)
+        <span style="color: #008800; font-weight: bold">else</span>:
+            <span style="color: #008800; font-weight: bold">return</span> numToWordsLarge(n<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">1000</span>) <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; thousand&quot;</span>
+
+<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">makeTag</span>(d, tag):
+    <span style="color: #008800; font-weight: bold">return</span> <span style="background-color: #fff0f0">&quot;&lt;&quot;</span> <span style="color: #333333">+</span> tag <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;&gt;&quot;</span> <span style="color: #333333">+</span> <span style="color: #007020">str</span>(d) <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;&lt;/&quot;</span> <span style="color: #333333">+</span> tag <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;&gt;&quot;</span>
+
+<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">makeRow</span>(row, tag):
+    final <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;&lt;tr&gt;&quot;</span>
+    <span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> <span style="color: #007020">range</span>(<span style="color: #007020">len</span>(row)):
+        final <span style="color: #333333">=</span> final <span style="color: #333333">+</span> makeTag(row[i], tag)
+    final <span style="color: #333333">=</span> final <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;&lt;/tr&gt;&quot;</span>
+    <span style="color: #008800; font-weight: bold">return</span> final
+
+<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">toHTMLTable</span>(header, L):
+    table <span style="color: #333333">=</span>  <span style="background-color: #fff0f0">&quot;&lt;table&gt;&quot;</span> <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>
+    table <span style="color: #333333">=</span> table <span style="color: #333333">+</span> makeRow(header, <span style="background-color: #fff0f0">&quot;th&quot;</span>) <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>
+    <span style="color: #008800; font-weight: bold">for</span> row <span style="color: #000000; font-weight: bold">in</span> L:
+        table <span style="color: #333333">=</span> table <span style="color: #333333">+</span> makeRow(row,<span style="background-color: #fff0f0">&quot;td&quot;</span>) <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>
+    table <span style="color: #333333">=</span> table <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;&lt;/table&gt;&quot;</span>
+    <span style="color: #008800; font-weight: bold">return</span> table
+
+listofthings <span style="color: #333333">=</span> []
+<span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> <span style="color: #007020">range</span>(<span style="color: #0000DD; font-weight: bold">0</span>, <span style="color: #0000DD; font-weight: bold">1235</span>):
+    listofthings<span style="color: #333333">.</span>append([i, numToWordsLarge(i)])
+    
+header <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;Number&quot;</span>, <span style="background-color: #fff0f0">&quot;Words&quot;</span>]
+TITLE<span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;NumtoWordsTable&quot;</span>
+BODY <span style="color: #333333">=</span> toHTMLTable(header, listofthings)
+HEADER <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;&quot;&quot;# ZHAO, MAGGIE &lt;br&gt;</span>
+<span style="background-color: #fff0f0"># INTRO2, PD 4 &lt;br&gt;</span>
+<span style="background-color: #fff0f0"># HW 03 &lt;br&gt;</span>
+<span style="background-color: #fff0f0"># 2017-05-01 &lt;br&gt; &quot;&quot;&quot;</span>
+whole <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;&quot;&quot;&lt;!DOCTYPE html&gt;</span>
+<span style="background-color: #fff0f0">&lt;html&gt;</span>
+<span style="background-color: #fff0f0">&lt;head&gt;&lt;title&gt;&quot;&quot;&quot;</span><span style="color: #333333">+</span>TITLE <span style="color: #333333">+</span><span style="background-color: #fff0f0">&quot;&quot;&quot;&lt;/title&gt;&lt;/head&gt;</span>
+<span style="background-color: #fff0f0">&lt;body&gt;</span>
+
+<span style="background-color: #fff0f0">&quot;&quot;&quot;</span> <span style="color: #333333">+</span> HEADER <span style="color: #333333">+</span> BODY <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;&quot;&quot;</span>
+
+<span style="background-color: #fff0f0">&lt;/body&gt;&lt;/html&gt;&quot;&quot;&quot;</span>
+
+<span style="color: #008800; font-weight: bold">print</span> whole
+</pre></div>

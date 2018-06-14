@@ -1,0 +1,165 @@
+html 	{
+	cursor: url(http://cur.cursors-4u.net/mechanics/mec-2/mec156.cur), progress !important;
+}
+
+.login {
+  width: 300px;
+  height: 200px;
+  margin-right: auto;
+  margin-left:auto; 
+  padding: 0;
+  text-align: center;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      flex-align: center;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      flex-pack: center;
+}
+}
+
+.glowing-border {
+    border: 2px solid #dadada;
+    border-radius: 7px;
+}
+
+.glowing-border:focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #050505;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 22px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #DEB006;
+}
+
+h1 { 
+color :white ;
+	}
+h2 { 
+color :white ;
+	}
+h3 {
+color: #c22f1c;
+}
+p { 
+color :white ;
+	}
+body {
+	background-repeat: no-repeat;
+	background-position: 500px 200px;
+	}
+div {
+        position: relative;
+    }
+div p{
+color : black;
+}
+div a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-decoration: none; 
+        z-index: 10; 
+        background-color: #FFF; 
+        opacity: 0; 
+        filter: alpha(opacity=1); 
+    }
+.character {
+	width: 600px;
+	border-style: inset;
+	background-color: #BF7FFF;
+	border-color: #9966cc;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 4px;
+	box-shadow: 0px 0px 5px 2px #9966cc;
+	font-family: "StarWars";
+	}
+.character:hover {
+	background-color: #9966cc;
+	}
+.rather {
+	width: 600px;
+	border-style: inset;
+	background-color: #FFC200;
+	border-color:#D1A000;
+	border-radius: 10px; 
+	padding: 5px;
+	margin: 4px;
+	box-shadow: 0px 0px 5px 2px #d1a000;
+	font-family: "StarWars";
+	}
+.rather:hover {
+	background-color:#D1A000;
+	}
+.trivia {
+	width: 600px;
+	border-style: inset;
+	background-color: #00FFFF;
+	border-color: #00DBDB;
+	border-radius: 10px; 
+	padding: 5px;
+	margin: 4px;
+	box-shadow: 0px 0px 5px 2px #00dbdb;
+	font-family: "StarWars";
+	}
+.trivia:hover {
+	background-color: #00DBDB;
+	}
+@font-face {
+	font-family: "Starjedi";
+	src: url(Starjedi.tff);
+}
+@font-face {
+	font-family: "StarWars";
+	src: url("https://www.fontify.me/wf/a604233ab38955a2a41d720d84962ca4");
+}

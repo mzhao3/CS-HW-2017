@@ -1,0 +1,17 @@
+﻿ZHAO, MAGGIE
+Intro2, pd 4
+HW01
+2017-02-01    
+
+
+1. Your primary computer's configuration, OS, internet connection (short description)
+Computer configs: 
+OS X El Capitan Version 10.11.6
+MacBook Pro: 2.7 GHz Intel Core i5, 8GB RAM, intel Iris Graphics, 250 GB storage
+Internet connection: decent speed considering the fact that there are 8(?) devices connected at any given moment; I never have to wait long enough for a page to load so that I feel the need to bang my head on my desk, so that’s pretty great
+1. Most exciting topic from term1?  (Why?)
+The topic I found most exciting was patch variables and the image manipulation lab. It’s pretty relevant to mindless tasks we do in everyday life ( if you use filters on social media, or to edit pictures ). Also, the effects are immediate, so it’s instant gratification :D - you can see what you are doing correctly (or incorrectly) right away. There’s a lot of room to experiment with your own designs.
+1. Most challenging topic from term1? (Why?)
+From the fall semester, the topic I found most challenging was lists. This is partially due to the fact that we didn’t spend too much time going over it, and because I find lists and strings oddly mind-boggling. 
+1. Your CS journey, skills, interests, etc. (Elaborate!)
+Last semester, I worked on problem solving and I learned about Scheme, Netlogo, and computer hardware. Probably my most applicable skill to CS is that I’m very organized and spend way too much time fussing over the tiniest details. I’m interested in learning how to use Python and HTML and effectively using them in the real world.

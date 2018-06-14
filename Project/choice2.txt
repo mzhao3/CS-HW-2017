@@ -1,0 +1,9 @@
+
+	<div class ="charresult">
+		<div class = "charimage">
+			<img src = "https://i.ytimg.com/vi/cqv2mJ5CD7I/maxresdefault.jpg">
+		</div>
+	<p> <strong> You got... </strong> WATTO. Watto was voiced by Andy Secombe in Star Wars: Episode I- The Phantom Menace; Episode II- Attack of the Clones. The Toydarian owner of a second-hand goods story in Mos Espa, on the planet of Tatooine. He is most known for being the slave owner of Shmi Skywalker, and her son, Anakin from winning a pod racing bet with Gardulla the Hutt. However, he loses Anakin to Qui-Gon Jinn, when he places a bad pod racing bet. <br>
+
+		Like Watto, you're proud and distrusting of the most popular/ accepted fads, relying only on yourself and what is immediately available. You try to make the best of your surroundings, aiming to be the top dog, whether it be through gambling or human trafficking. You're largely motivated by money (make what you want from that), and can see through most (Jedi) "mind tricks". Although you have a tough exterior, sometimes you let your soft personality shine (ex: his fairness as a slave owner and his pride at seeing Anakin as a Jedi).
+	

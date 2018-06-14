@@ -1,0 +1,95 @@
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #888888"># ZHAO, MAGGIE</span>
+<span style="color: #888888"># INTRO2, PD 4</span>
+<span style="color: #888888"># HW 05</span>
+<span style="color: #888888"># 2017-05-07</span>
+
+<span style="color: #888888">#FUNCTIONS</span>
+
+<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">tally</span>(L):
+    d <span style="color: #333333">=</span> {}
+    <span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> <span style="color: #007020">range</span>(<span style="color: #007020">len</span>(L)):
+        <span style="color: #008800; font-weight: bold">if</span> L[i]<span style="color: #333333">.</span>lower() <span style="color: #000000; font-weight: bold">in</span> d:
+             d[L[i]<span style="color: #333333">.</span>lower()] <span style="color: #333333">=</span> d[L[i]<span style="color: #333333">.</span>lower()] <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span>
+        <span style="color: #008800; font-weight: bold">else</span>:
+             d[L[i]<span style="color: #333333">.</span>lower()] <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>
+    <span style="color: #008800; font-weight: bold">return</span> d
+
+<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">makeTag</span>(d, tag):
+    <span style="color: #008800; font-weight: bold">return</span> <span style="background-color: #fff0f0">&quot;&lt;&quot;</span> <span style="color: #333333">+</span> tag <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;&gt;&quot;</span> <span style="color: #333333">+</span> <span style="color: #007020">str</span>(d) <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;&lt;/&quot;</span> <span style="color: #333333">+</span> tag <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;&gt;&quot;</span>
+
+<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">makeRow</span>(row, tag):
+    final <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;&lt;tr&gt;&quot;</span>
+    <span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> <span style="color: #007020">range</span>(<span style="color: #007020">len</span>(row)):
+        final <span style="color: #333333">=</span> final <span style="color: #333333">+</span> makeTag(row[i], tag)
+    final <span style="color: #333333">=</span> final <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;&lt;/tr&gt;&quot;</span>
+    <span style="color: #008800; font-weight: bold">return</span> final
+
+<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">toHTMLTable</span>(header, L):
+    table <span style="color: #333333">=</span>  <span style="background-color: #fff0f0">&quot;&lt;table&gt;&quot;</span> <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>
+    table <span style="color: #333333">=</span> table <span style="color: #333333">+</span> makeRow(header, <span style="background-color: #fff0f0">&quot;th&quot;</span>) <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>
+    <span style="color: #008800; font-weight: bold">for</span> row <span style="color: #000000; font-weight: bold">in</span> L:
+        table <span style="color: #333333">=</span> table <span style="color: #333333">+</span> makeRow(row,<span style="background-color: #fff0f0">&quot;td&quot;</span>) <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>
+    table <span style="color: #333333">=</span> table <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;&lt;/table&gt;&quot;</span>
+    <span style="color: #008800; font-weight: bold">return</span> table
+
+
+text <span style="color: #333333">=</span> <span style="color: #007020">open</span>(<span style="background-color: #fff0f0">&quot;waroftheworlds.txt&quot;</span>, <span style="background-color: #fff0f0">&quot;r&quot;</span>)<span style="color: #333333">.</span>read()
+
+
+text<span style="color: #333333">=</span> text<span style="color: #333333">.</span>replace(<span style="background-color: #fff0f0">&quot;--&quot;</span>, <span style="background-color: #fff0f0">&quot; &quot;</span>)
+ONE <span style="color: #333333">=</span> text<span style="color: #333333">.</span>split()
+
+<span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> <span style="color: #007020">range</span>(<span style="color: #007020">len</span>(ONE)):
+    ONE[i] <span style="color: #333333">=</span> ONE[i]<span style="color: #333333">.</span>strip(<span style="background-color: #fff0f0">&#39;[],.!?;:&quot;{}()_&#39;</span>)
+    ONE[i] <span style="color: #333333">=</span> ONE[i]<span style="color: #333333">.</span>strip(<span style="background-color: #fff0f0">&quot;&#39;&quot;</span>)
+ONE <span style="color: #333333">=</span> <span style="color: #007020">filter</span>(<span style="color: #007020">None</span>, ONE)
+unique <span style="color: #333333">=</span> tally(ONE)
+ONE <span style="color: #333333">=</span> <span style="color: #007020">sorted</span>(unique<span style="color: #333333">.</span>keys())
+
+heading <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;ID&quot;</span>, <span style="background-color: #fff0f0">&quot;Word&quot;</span>, <span style="background-color: #fff0f0">&quot;count&quot;</span>]
+
+listofthings <span style="color: #333333">=</span> []
+i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>
+<span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> <span style="color: #007020">range</span>(<span style="color: #007020">len</span>(ONE)):
+    listofthings<span style="color: #333333">.</span>append([i, ONE[i], unique[ONE[i]]])
+    i <span style="color: #333333">+=</span> <span style="color: #0000DD; font-weight: bold">1</span>
+character <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>
+<span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> <span style="color: #007020">range</span>(<span style="color: #007020">len</span>(ONE)):
+    character <span style="color: #333333">=</span> character <span style="color: #333333">+</span> <span style="color: #007020">len</span>(ONE[i])
+over250 <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>
+<span style="color: #008800; font-weight: bold">for</span> key <span style="color: #000000; font-weight: bold">in</span> unique:
+    <span style="color: #008800; font-weight: bold">if</span> unique[key] <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">250</span>:
+        over250 <span style="color: #333333">+=</span> <span style="color: #0000DD; font-weight: bold">1</span>
+usedonce <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>
+<span style="color: #008800; font-weight: bold">for</span> key <span style="color: #000000; font-weight: bold">in</span> unique:
+    <span style="color: #008800; font-weight: bold">if</span> unique[key] <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">1</span>:
+        usedonce<span style="color: #333333">+=</span> <span style="color: #0000DD; font-weight: bold">1</span>
+over15 <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>
+longwords <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;&quot;</span>
+<span style="color: #008800; font-weight: bold">for</span> key <span style="color: #000000; font-weight: bold">in</span> unique:
+    <span style="color: #008800; font-weight: bold">if</span> <span style="color: #007020">len</span>(key) <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">15</span>:
+        over15 <span style="color: #333333">+=</span> <span style="color: #0000DD; font-weight: bold">1</span>
+        longwords <span style="color: #333333">=</span> longwords <span style="color: #333333">+</span> key <span style="color: #333333">+</span><span style="background-color: #fff0f0">&quot; &quot;</span>
+longwords <span style="color: #333333">=</span> longwords<span style="color: #333333">.</span>split()
+
+STAT <span style="color: #333333">=</span> <span style="color: #007020">str</span>(character) <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; characters in the text file. &lt;br&gt;&quot;</span> <span style="color: #333333">+</span> <span style="color: #007020">str</span>(<span style="color: #007020">len</span>(ONE)) <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; words in the book. &lt;br&gt;&quot;</span> <span style="color: #333333">+</span><span style="color: #007020">str</span>(<span style="color: #007020">len</span>(unique)) <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; unique words in the book. &lt;br&gt;&quot;</span> <span style="color: #333333">+</span> <span style="color: #007020">str</span>(over250) <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; words that are used over 250 times. &lt;br&gt;&quot;</span> <span style="color: #333333">+</span><span style="color: #007020">str</span>(usedonce) <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; words that are used once. &lt;br&gt;&quot;</span> <span style="color: #333333">+</span> <span style="color: #007020">str</span>(over15) <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; words that are over 15 letters long. &lt;br&gt;&quot;</span>
+
+TITLE<span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Word Count&quot;</span>
+BODY <span style="color: #333333">=</span> toHTMLTable(heading, listofthings)
+HEADER <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;&quot;&quot;</span>
+<span style="background-color: #fff0f0"># ZHAO, MAGGIE&lt;br&gt;</span>
+<span style="background-color: #fff0f0"># INTRO2, PD 4&lt;br&gt;</span>
+<span style="background-color: #fff0f0"># HW 05&lt;br&gt;</span>
+<span style="background-color: #fff0f0"># 2017-05-07&lt;br&gt;</span>
+<span style="background-color: #fff0f0">&quot;&quot;&quot;</span>
+whole <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;&quot;&quot;&lt;!DOCTYPE html&gt;</span>
+<span style="background-color: #fff0f0">&lt;html&gt;</span>
+<span style="background-color: #fff0f0">&lt;head&gt;&lt;title&gt;&quot;&quot;&quot;</span><span style="color: #333333">+</span>TITLE <span style="color: #333333">+</span><span style="background-color: #fff0f0">&quot;&quot;&quot;&lt;/title&gt;&lt;/head&gt;</span>
+<span style="background-color: #fff0f0">&lt;body&gt;</span>
+
+<span style="background-color: #fff0f0">&quot;&quot;&quot;</span> <span style="color: #333333">+</span> HEADER <span style="color: #333333">+</span> STAT <span style="color: #333333">+</span> <span style="color: #007020">str</span>(longwords) <span style="color: #333333">+</span> BODY <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;&quot;&quot;</span>
+
+<span style="background-color: #fff0f0">&lt;/body&gt;&lt;/html&gt;&quot;&quot;&quot;</span>
+
+<span style="color: #008800; font-weight: bold">print</span> whole
+</pre></div>

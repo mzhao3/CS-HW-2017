@@ -1,0 +1,24 @@
+<!DOCTYPE= html>
+<html>
+	<title> Star Wars Character Result! </title>
+	<body> 
+		<h3> Page header/title here </h3>
+	<div class ="char result">
+		<div class = "charimage">
+		<img src = "https://i.ytimg.com/vi/PXh47Z_iYlU/maxresdefault.jpg"> 
+		</div>
+		<p> <strong> You got... </strong> JAR JAR BINKS. Jar Jar was voiced by Ahmed Best in Star Wars: Episode I- The Phantom Menace; Episode II- Attack of the Clones; Episode III- Revenge of the Sith. A Gungan male military commander turned politician from the planet of Naboo, he played a key role in the Invasion of Naboo and the Clone Wars, which culminated in the fall of the Galactic Republic and the rise of the Galactic Empire. He is most known for saying "Exsqueeze me", "yousa" and "Meesa called Jar Jar Binks, Meesa your humble servant!" Jar Jar can live comfortably in both land and water, using his long tongue to grab food and other objects. Although not a skilled fighter, he is courageous, loyal, and dependable. < a href = "http://starwars.wikia.com/wiki/Jar_Jar_Binks"> (source) </a> <br>
+
+		Jar Jar is rumored to have <a href = "http://www.stuff.co.nz/entertainment/film/70017741/Star-Wars-characters-and-their-personality-disorders"> attention deficit hyperactivity disorder (ADHD) </a>, as depicted by his frequent overlooking of detail and many careless mistakes (ex: getting his tongue zapped on the pod, sticking his hand in a turbine that is about to be turned on). <br>
+
+		Like Jar Jar, you're clumsy and often have a foot in your mouth, saying things at the most inopportune times. However, you're also loyal (almost to a fault) and easily persuaded, making you an easy-going friend (and an ideal sidekick). Your eagerness to be useful is often exploited by others in positions of power. However, you're well-meaning and also scarily optimistic about your life. <br>
+	
+		Just kidding! Jar Jar Binks is the most useless character of all the Star Wars movies! Although meant to be comic relief, he is one of the most hated in the franchise. He has no respect for others' belongings, is not aware of his ineptitude on the battlefield or in the political field. His knack for getting into trouble and overall obliviousness, incompetence, and cowardliness combined with his own perceived excellency rubs many the wrong way. 
+		<div class= "charimage">
+		<img src = "http://s2.quickmeme.com/img/c6/c68e5a46199e6917cb955a8163cb859e165ea492bbd5744f9643b9fde1f0eb11.jpg"> 
+		</div>
+		</p>
+	</div>
+If you want to try your luck as a different character, <button type="button"> Click Here!</button> to take the test again or go back to the <a href = home.py> home page </a>. 
+		</body>  
+</html>

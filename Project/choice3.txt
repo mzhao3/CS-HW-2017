@@ -1,0 +1,8 @@
+
+	<div class ="charresult">
+		<div class = "charimage">
+		<img src = "https://vignette2.wikia.nocookie.net/starwarsrepublicclonetroopers/images/f/f8/Captain_Rex.jpg/revision/latest/scale-to-width-down/380?cb=20110606004405"> 
+		</div>
+		<p> <strong> You got... </strong> CAPTAIN REX or CT-7567. Captain Rex was voiced by Dee Bradley Baker in Star Wars: The Clone Wars and Star Wars Rebels (like all the other clone troopers). He is only distinguishable by his close-shaved blond hair, blue markings on his armor, and stylized hawk eyes painted on his helmet. Considered by Anakin to be his "first-in-command", every trooper aspires to be him. He is brave under fire and dedicated to the men serving under him. Over the course of the Clone Wars, he starts to doubt the rules, as the war continues to claim more lives and bring ruin to more worlds. <br>
+		Like Captain Rex, you are no-nonsense, and by the book; in other words, a strict rule follower. You believe that a person's highest calling is duty, and are second to none in loyalty or capability. Your ability to evolve and adapt has been gradually built open, and you look up to an outstanding member of society as a role model. Even as others' morals crumble, you remain faithful to your duties and ideals.
+	

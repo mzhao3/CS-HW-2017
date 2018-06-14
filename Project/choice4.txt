@@ -1,0 +1,7 @@
+
+	<div class ="charresult">
+		<div class = "charimage">
+			<img src= "https://upload.wikimedia.org/wikipedia/en/d/d7/Ahsoka_Tano.png">
+		</div>
+		<p> <strong> You got... </strong> AHSOKA TANO. Ahsohka was voiced by Ashley Eckstein in Star Wars: The Clone Wars and Star Wars Rebels.  Nicknamed "Snips" by her master, Anakin Skywalker, she is introduced as a Padawan apprentice. After the Clone Wars, she is known as "Ashla" or her codename, "Fulcrum", and establishes a network of various rebel cells against the Galactic Empire. A Togruta female, she was born in Shili and trained in the Jedi Temple on Coruscant. She becomes a commander of the Grand Army of the Republic. <br>
+		Like Ahsoka, you're aggressive, feisty, stubborn, impulsive and reckless, but also loyal, brave,  generous, and kind hearted. You're very honest- you say what you think, and don't bother to hide your feelings. Although admirable, this trait often offends others. You understand the difficulty of making the right decision versus the easy decision, which is often hard for most people to grasp. The impulsiveness you showed in your early years has mellowed, so while you may still be quick to action, you often think before you do. You've absorbed knowledge from multiple mentors and applied it, but ultimately, you've forged your own path. <a href = "http://www.starwars.com/news/what-your-favorite-star-wars-character-says-about-you"> (source) </a>

@@ -1,0 +1,102 @@
+                                                       
+/*                                                                                                
+  Maggie Zhao                                                                                     
+  APCS1 pd02                                                                                      
+  HW12- stAtistically sPeaking (Aesthetically Pleasing)                                             
+  2017-10-05 T                                                                                    
+*/
+
+public class Stats{
+
+    public static int mean(int a, int b) {
+        /* the method, mean() takes two integer values, and returns the average (the sum of the values divided by the number of values, 2).                                                        
+           precondition: two integer inputs                                                       
+           postcondition: an integer value that is halfway between a and b                        
+         */
+        int mean;
+        mean = (a + b) / 2;
+        return mean;
+    }
+
+    public static double mean(double a, double b){
+        /* the method, mean() takes two double values, and returns the average (the sum of the values divided by the number of values, 2).                                                         
+           precondition: two double inputs                                                        
+           postcondition: a double value that is halfway between a and b                          
+         */
+        double mean;
+	mean = ( a + b) / 2;
+        return mean;
+    }
+
+    public static int max(int a, int b){
+        /* the method, max() takes two integer values, and returns the greater of the two. If the\
+ two values are equal, it is returned.                                                            
+           precondition: two integer inputs                                                       
+           postcondition: one integer, that is the larger of the two inputs                       
+         */
+        if ( a >= b)
+            {
+            return a;
+		} else {
+            return b;
+                }
+    }
+
+    public static double max(double a, double b){
+        /* the method, max() takes two double values, and returns the greater of the two. If the \
+two values are equal, it is returned.                                                             
+           precondition: two double inputs                                                        
+           postcondition: one double, that is the larger of the two inputs                        
+        */
+        if ( a >= b)
+            {
+            return a;
+                } else {
+            return b;
+                }
+    }
+
+    public static int geoMean(int a, int b){
+        /* the method, geoMean() takes two integer values, and finds the square root of the produ\
+ct. If the output is a float, it will return the floor of the float. Typecasting is necessary to \
+change the float back to integer.                                                                 
+           precondition: two integer inputs                                                       
+           postcondition: the geometric mean of the two numbers, as an integer                    
+         */
+        double geoMean = (Math.sqrt( a *  b));
+        return (int) geoMean;
+    }
+
+    public static double geoMean(double a, double b){
+        /* the method, geoMean() takes two integer values, and finds the square root of the produ
+ct. Unlike the integer version of geoMean, the output of this method can be a float.              
+           precondition: two integer inputs                                                      
+           postcondition: the geometric mean of the two numbers, as an integer                    
+         */
+        double geoMean = (Math.sqrt( a * b));
+        return geoMean;
+    }
+
+    public static void main (String [] args) {
+        /* main method: tests the functionality of each method, whether or not it returns the correct primitive, and if it prints out with the preceding statement.                                
+         */
+
+        // MEAN                                                                                   
+        System.out.println("The mean of integers a and b is " + mean(8, 14)+"." );
+        //...11                                                                                   
+        System.out.println("The mean of floats a and b is " + mean(8.0, 123.5)+".");
+        //... 65.75                                                                               
+
+        //MAX                                                                                     
+        System.out.println("The max of integers a and b is " + max(10,10)+".");
+        //... 10                                                                                  
+        System.out.println("The max of floats a and b is " + max(12345.0, 2.0)+".");
+        //... 12345.0                                                                             
+
+        //GEOMETRIC MEAN                                                                          
+        System.out.println("The geometric mean of integers a and b is " + geoMean(3, 4)+".");
+        //... 3                                                                                   
+        System.out.println("The geometric mean of floats a and b is " + geoMean(1.0, 1.0) + ".");
+        //... 1.0                                                                                 
+    }
+}
